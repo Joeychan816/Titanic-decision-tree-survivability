@@ -48,8 +48,8 @@ plt.savefig('treeplot.png') #saves as treeplot.png
 y_pred1 = clf.predict(X_train) #use trained model; clf to predict target values for training dataset (X_train)
 y_pred2 = clf.predict(X_test) #use same trained model; clf, to predict target values for test dataset (X_test)
 
-print("Accuracy of train dataset (criterion=entropy, max_depth=100, min_samples_split=3):",metrics.accuracy_score(y_train, y_pred1))
-print("Accuracy of test dataset (criterion=entropy, max_depth=100, min_samples_split=3):",metrics.accuracy_score(y_test, y_pred2))
+print("Accuracy of train dataset(criterion=entropy, max_depth=10, min_samples_split=3):",metrics.accuracy_score(y_train, y_pred1))
+print("Accuracy of test dataset(criterion=entropy, max_depth=10, min_samples_split=3):",metrics.accuracy_score(y_test, y_pred2))
 
 # Decision tree classifier using entropy as split criterion,
 # maximum node depth of 100 levels,
